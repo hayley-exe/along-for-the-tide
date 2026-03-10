@@ -1,0 +1,141 @@
+.menu-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #17888d;
+  color: white;
+  border-radius: 5px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1001;
+}
+
+/* Sidebar base (desktop by default) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 70px;
+  overflow: hidden;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+.sidebar.open {
+  width: 100vw;
+  background-color: #59a9aa;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.sidebar ul li {
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #61b4b6;
+  border-radius: 5px;
+}
+
+/* ---------- MOBILE DROPDOWN STYLES ---------- */
+@media (max-width: 768px) {
+  .col-12 {
+    width: 90%;
+    max-width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    transform: translateX(-30px);
+  }
+  .sidebar {
+    flex-direction: row;
+    width: 100vw;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    padding: 0;
+    align-items: flex-start;
+    border-radius: 0;
+    background-color: #59a9aa;
+  }
+
+  .sidebar.open {
+    height: 20vh;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .sidebar ul {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .sidebar ul li {
+    width: 100%;
+  }
+
+  .sidebar ul li a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 12px 0;
+  }
+}
+
+.ban {
+    padding-top: ;
+}
+
+/* Text Banner
+--------------------------------------------------------------------------------*/
+
+#text-banner {
+  background-color:#61b4b6; /* Changes the headline's background color */
+}
+
+#text-banner .container {
+  max-width: 1000px;
+  padding-top: 200px;
+  margin: 0 auto;
+  box-sizing:border-box;
+}
+
+#text-banner .container h2 {
+  color: #ffffff; /* Changes text banner's font color */
+  margin: 0 auto 0em;
+  text-align: center; /* Moves the text banner text to the left, center, or right -- your preference! */
+}​
