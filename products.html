@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Products</title>
+    <title>Along For The Tide</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.typekit.net/tgs0izt.css">
 </head>
 
 <body>
@@ -20,13 +21,51 @@
 
             <nav class="sidebar" id="sidebar">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="socials.html">Socials</a></li>
+                    <li><a href="index.html" onclick="selectPage(event)">Home</a></li>
+                    <li><a href="products.html" onclick="selectPage(event)">Products</a></li>
+                    <li><a href="socials.html" onclick="selectPage(event)">Socials</a></li>
                 </ul>
             </nav>
     </header>
-    <main></main>
+    <main>
+
+
+
+        <div id="text-banner">
+            <div class="hero">
+                <h1>Along For The Tide</h1>
+
+            </div>
+        </div>
+        <br>
+        <div class="container story">
+            <div>
+                <h2>Products</h2>
+
+            </div>
+        </div>
+
+        <div class="carousel-viewport" id="viewport">
+            <div class="carousel-track" id="track">
+                <div class="carousel-slide"><img src="imgs/beach-sign.jpeg" alt="1"></div>
+                <div class="carousel-slide"><img src="imgs/cutting-board.jpeg" alt="2"></div>
+                <div class="carousel-slide lim"><img src="imgs/limon.jpeg" alt="3"></div>
+                <div class="carousel-slide"><img src="imgs/seasonal.jpeg" alt="4"></div>
+                <div class="carousel-slide"><img src="imgs/shell-dish.jpeg" alt="5"></div>
+            </div>
+
+            <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+            <button class="nav-btn next" id="nextBtn">&#10095;</button>
+        </div>
+
+
+
+
+
+
+
+
+    </main>
     <footer>
         <!-- place footer here -->
     </footer>
