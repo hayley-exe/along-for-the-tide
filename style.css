@@ -116,6 +116,7 @@ h1 {
   align-items: center;
   padding-left: 0;
   box-sizing: border-box;
+  font-size: 33px;
 }
 
 .sidebar.open {
@@ -209,6 +210,7 @@ body {
   margin: 0;
   background: #fdfdfd;
   overflow-x: hidden;
+  font-family: "Sour Gummy", sans-serif !important;
 }
 
 .carousel-viewport {
@@ -306,5 +308,61 @@ body {
 
   h1 {
     font-size: 75px !important;
+  }
+}
+
+.story {
+  max-width: 100%;
+  padding: 40px 30px;
+  background-color: #59a9aa;
+  border-radius: 22px;
+  color: white !important;
+  height: 100%;
+  font-size: 30px;
+}
+
+.story-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Pupper Image Styles */
+.pupper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.pupper {
+  width: 100%;
+}
+
+.pupper-img {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  display: block;
+  object-fit: contain; /* Keeps entire image visible */
+}
+
+/* Responsive Layout */
+@media (max-width: 991px) {
+  .story-section .row {
+    flex-direction: column;
+  }
+
+  .pupper-wrapper {
+    margin-top: 30px;
+  }
+
+  .pupper {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .pupper-wrapper {
+    justify-content: center; /* Centers image nicely on desktop */
   }
 }
