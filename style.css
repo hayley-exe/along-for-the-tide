@@ -23,11 +23,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: white;
   align-items: center;
   text-align: center;
-  background-image: url("imgs/screenie.png");
-  background-size: cover;
-  background-position: center;
+  border: 2px solid #2dc2ca;
+  border-radius: 10px;
   z-index: 1;
 }
 
@@ -35,6 +35,7 @@
   list-style: none;
   padding-left: 0;
   margin: 0;
+  color: white !important;
 }
 
 .social-list li {
@@ -42,6 +43,11 @@
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.social-list li a {
+  color: white;
+  text-decoration: none;
 }
 
 .social-list li::before {
@@ -76,15 +82,18 @@
   content: "";
   position: absolute;
   inset: 0;
-
+  background-image: url("imgs/water.jpeg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
   z-index: 0;
 }
 
 .hero h1 {
   font-size: 3rem;
-
   position: relative;
   z-index: 1;
+  color: white;
 }
 
 .hero p {
@@ -116,7 +125,7 @@ h1 {
   align-items: center;
   padding-left: 0;
   box-sizing: border-box;
-  font-size: 33px;
+  font-size: 22px;
 }
 
 .sidebar.open {
@@ -211,6 +220,8 @@ body {
   background: #fdfdfd;
   overflow-x: hidden;
   font-family: "Sour Gummy", sans-serif !important;
+  background: #58dbd5;
+  background: radial-gradient(circle, #5c8f92 0%, #89fbff 51%, #90bbbe 100%);
 }
 
 .carousel-viewport {
@@ -222,13 +233,15 @@ body {
   display: flex;
   align-items: center;
   touch-action: pan-y;
+  border-radius: 25px;
 }
 
 .carousel-track {
   display: flex;
   gap: 30px;
+  margin-left: 100px;
   will-change: transform;
-  transition: none !important; /* This must be none */
+  transition: none !important;
 }
 
 .carousel-slide {
@@ -309,22 +322,38 @@ body {
   h1 {
     font-size: 75px !important;
   }
+
+  .homey {
+    font-size: 18px !important;
+    padding: 20px 15px;
+  }
 }
 
 .story {
   max-width: 100%;
   padding: 40px 30px;
+  margin: 40px auto;
+  margin-left: 20px;
+  margin-right: 20px;
   background-color: #59a9aa;
   border-radius: 22px;
   color: white !important;
   height: 100%;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .story-section {
   max-width: 1200px;
   margin: 40px auto;
-  padding: 0 20px;
+  padding: 20px 15px;
+}
+
+.homey {
+  background-color: #59a9aa;
+  border-radius: 22px;
+  color: white !important;
+  padding: 40px 30px;
+  font-size: 20px;
 }
 
 /* Pupper Image Styles */
@@ -365,4 +394,17 @@ body {
   .pupper-wrapper {
     justify-content: center; /* Centers image nicely on desktop */
   }
+}
+
+.footer {
+  background-color: #5bb1b6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
 }
